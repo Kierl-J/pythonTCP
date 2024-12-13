@@ -12,7 +12,7 @@ def handle_client(client_socket, addr):
     print(f"New connection from {addr}")
     try:
         while True:
-            data = client_socket.recv(1024)
+            data = client_socket.recv()
             if not data:
                 break
             print(f"data received from {addr}: {data.decode()}")
