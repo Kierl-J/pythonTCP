@@ -33,7 +33,6 @@ while True:
     if message.lower() == 'exit':
         print("Exiting...")
         client_socket.sendall(message.encode())
-
     client_socket.sendall(message.encode())
 
 
